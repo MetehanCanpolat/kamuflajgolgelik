@@ -24,6 +24,12 @@
     text-align: center;
   }
 
+  .text-container{
+    font-family: 'Mukta', sans-serif;
+    margin-top: 20px;
+    width: 375px;
+  }
+
   .social-container{
     margin: 50px;
   }
@@ -76,13 +82,12 @@
 
   section{
     display: flex;
+    height: 100vh
   }
-
 
   .logo img{
     width: 150px;
-    margin-right: 60vh;
-    margin-top: 50px;
+    margin-right: 10vh;
   }
 
   nav{
