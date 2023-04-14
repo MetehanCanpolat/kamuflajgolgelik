@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Spider Netting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="image/logo.jpg" alt="" /></label>
+      <ul>
+        <li><a class="nav-hover" href="index.html">ANASAYFA</a></li>
+        <li><a class="nav-hover" href="works.html">REFERANSLARIMIZ</a></li>
+        <li><a class="nav-hover" href="about.html">HAKKIMIZDA</a></li>
+        <li><a class="nav-hover" href="contact.html">İLETİŞİM</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="left-container">
+        <div class="title">
+            <h1>SPIDER NETTING</h1>
+        </div>
+        <div class="slogan">
+            <h2>Yeni Nesil Gölgelendirme Ağları</h2>
+        </div>
+
+        <div class="phone-container">
+           <a href="tel:+905370370398">Size Özel Teklifler İçin Hemen Arayın!</a> <img src="image/phone-svgrepo-com.svg" alt="">
+        </div>
+
+        <div class="social-container">
+            <a href="#"><img src="image/instagram-icon.svg" alt=""></a>
+            <a href="#"><img src="image/youtube-icon.svg" alt=""></a>
+        </div>
+
+
+      </div>
+      <div class="right-container">
+        <div class="slideshow-container">
+          <div class="mySlides fade-1">
+            <div class="slide-container">
+              <div class="title"></div>
+              <div class="text">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Totam corrupti incidunt porro, illo molestiae cum blanditiis
+                  debitis! Nihil dolorum provident aperiam ipsa, error dolores
+                  earum enim amet eligendi cum? Excepturi totam reiciendis
+                  inventore alias quaerat architecto vitae aperiam sunt deserunt
+                  aliquam consectetur eligendi eaque, ipsa voluptatum! Eos iure
+                  veritatis ea.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade-2">
+            <div class="slide-container">
+              <div class="title"></div>
+              <div class="text">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  corporis at earum asperiores qui architecto dolore pariatur
+                  tempore, quasi perspiciatis ullam labore, velit unde nobis
+                  debitis ducimus numquam optio in? Rem quis maiores vel tenetur
+                  tempora blanditiis magnam, necessitatibus quibusdam sint
+                  voluptatem non omnis architecto laboriosam minima atque? Unde,
+                  labore!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade-3">
+            <div class="slide-container">
+              <div class="title"></div>
+              <div class="text">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  corporis at earum asperiores qui architecto dolore pariatur
+                  tempore, quasi perspiciatis ullam labore, velit unde nobis
+                  debitis ducimus numquam optio in? Rem quis maiores vel tenetur
+                  tempora blanditiis magnam, necessitatibus quibusdam sint
+                  voluptatem non omnis architecto laboriosam minima atque? Unde,
+                  labore!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <script>
+          let slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+              slideIndex = 1;
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 6000); // Change image every 2 seconds
+          }
+        </script>
+      </div>
+    </section>
+  </body>
+</html>

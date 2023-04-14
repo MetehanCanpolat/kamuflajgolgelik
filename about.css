@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mukta:wght@300&family=Orbitron&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+  .left-container{
+    width: 30%;
+    background: linear-gradient(to left, hsl(0, 2%, 9%), hsl(345, 4%, 21%));
+    color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  .social-container{
+    margin: 50px;
+  }
+
+  .phone-container{
+    margin-top: 100px;
+    width: 300px;
+    height: 30px;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-self: flex-start;
+    font-family: 'Mukta', sans-serif;
+  }
+
+  .phone-container a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .phone-container img{
+    width: 20px;
+  }
+
+  .slogan{
+    width: 300px;
+    margin-top: 40px;
+    font-family: 'Black Ops One', cursive;
+    text-align: left;
+    font-size: 17px;
+    color: #FFFF;
+    opacity: 0.9;
+  }
+
+  .social-container img{
+    width: 30px;
+    margin-right: 20px;
+  }
+
+  .right-container{
+    width: 70%;
+  }
+
+  section{
+    display: flex;
+
+  }
+
+
+  .logo img{
+    width: 150px;
+    margin-right: 60vh;
+    margin-top: 50px;
+  }
+
+  nav{
+    opacity: 1;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: -80px;
+    position: relative;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    text-shadow: 0 0 3px #292626, 0 0 5px #4e4e50;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+  }
+  .nav-hover:hover{
+    background: #FFFF;
+    color: black;
+    text-shadow: none;
+    transition: .5s;
+  } 
+  
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media screen and (max-width: 450px){
+    .checkbtn{
+      display: block;
+    }
+    nav{
+        display: block;
+        position: fixed;
+    }
+    .logo img{
+        width: 80px;
+        margin-left: 147.5px;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #FFFF;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+
+    .text{
+      color: #FFFF;
+      width: 250px;
+      background-color: rgba(30, 23, 23, 0.5);
+    }
+  }
+
+  
+  .fade-1{
+    background-image: url("image/11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .fade-2{
+    background-image: url("image/22.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .fade-3{
+    background-image: url("image/33.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .slide-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .text{
+      margin: 50px;
+      color: #FFFF;
+      background-color: rgba(30, 23, 23, 0.4);   
+  }
+ 
